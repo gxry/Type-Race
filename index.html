@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Type Race! by: -gx-</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center" onload="init()">
+  
+  <form class="form-signin">
+      <h1><span class="badge badge-exclamation">Type Race!</span></h1><hr/>
+
+    <div class="alert alert-primary" role="alert">
+      <span id="score" >Press <b>Start</b> to play f*kcing simple game!</span>
+      <span id="waktu" ></span>
+    </div>
+
+    <h4><span id="katanya" class="badge badge-primary"></span></h4><hr/>
+
+    <label for="inputEmail" class="sr-only"></label>
+    <input id="ketikannya" type="text" onkeyup="ketik()" class="form-control" placeholder="Ketik yang cepat">
+
+    <br/>
+    <span id="btnStart" class="btn btn-lg btn-primary btn-block" onclick="mulai();countdown();">Start</span>
+    <p class="mt-5 mb-3 text-muted">
+      &copy; <a href="https://who-am-i-gxry.netlify.com">Gary Abraham</a> - 2018<br/>
+      <small>
+        <a href="https://github.com/gxry" target="_blank">my-github</a> |
+        <a href="https://garyabraham.blogspot.com" target="_blank">my-old-blog</a>
+        <br/>This template from Bootstrap Example<br/>
+        btw, You can fork this code on my github
+      </small>
+    </p>
+  </form>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <!-- This is the file that make this game worked -->
+	<script src="main.js"></script>
+</body>
+
+</html>
